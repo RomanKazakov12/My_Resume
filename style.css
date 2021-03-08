@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    color: white;
+    padding: 25px 0 0 30px;
+    margin-bottom: 35px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -64,4 +73,69 @@ header .main-wrapper {
 .main-menu > ul > li > a:hover::after {
     width: 100%;
     opacity: 1;
+}
+
+.section-1 {
+    height: 500px;
+    background: url(src/background-steel.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.section-1 .main-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.section-1-right {
+    width: 50%;
+}
+
+.section-1-right > div {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.section-1 > div > img {
+    margin: 50px auto;
+    border: 5px solid #13132b;
+    border-radius: 30px;
+}
+
+.section-1-right > h1 {
+    position: relative;
+}
+
+.section-1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #3a50719e;
+}
+
+.section-1-right h1::after {
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 5px;
+    background: #ff8100;
+    right: 125px;
+}
+
+.section-1-right h1::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 60px;
+    background: #ff8100;
+    top: 20px;
+    left: 385px;
 }
