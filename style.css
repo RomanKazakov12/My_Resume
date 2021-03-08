@@ -40,8 +40,28 @@ header .main-wrapper {
     color: white;
     letter-spacing: 1px;
     margin: 15px;
+    position: relative;
 }
 
 .main-menu > ul > li:last-child > a {
     margin-right: 0px;
+}
+
+.main-menu > ul > li > a::after {
+    content: "";
+    width: 10%;
+    height: 5px;
+    background: #ff8100;
+    position: absolute;
+    top: 22px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    transition-duration: 0.3s;
+    opacity: 0;
+}
+
+.main-menu > ul > li > a:hover::after {
+    width: 100%;
+    opacity: 1;
 }
