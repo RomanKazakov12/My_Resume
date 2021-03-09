@@ -19,6 +19,7 @@ h2 {
     line-height: 50px;
     color: black;
     margin-bottom: 70px;
+    margin-top: 70px;
     text-align: center;
 }
 
@@ -164,8 +165,9 @@ header .main-wrapper {
     left: 385px;
 }
 
-.section-2 {
+.section-2, .section-3 {
     padding-top: 65px;
+    padding-bottom: 100px;
 }
 
 .section-2 .main-wrapper > div {
@@ -184,4 +186,52 @@ header .main-wrapper {
     font-size: 20px;
     font-weight: 400;
     line-height: 50px;
+}
+
+.section-3 {
+    background: url(src/background-steel.jpg) fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.section-3 > .main-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.section-3 .main-wrapper > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.section-3 .main-wrapper > h2 {
+    color: white;
+}
+
+.section-3 .main-wrapper > h2 > span::after {
+    background: white;
+}
+
+.section-3 .main-wrapper > div > p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+.section-3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #3a50719e;
+}
+
+.section-3 .main-wrapper > div > img {
+    border: 5px solid green;
+    border-radius: 10px;
 }
