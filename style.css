@@ -38,6 +38,21 @@ h2 > span::after {
     margin-left: -20%;
 }
 
+.wiki-link {
+    color: #f5ed00;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.wiki-link:hover{
+    color: #ff0000; 
+}
+
+.section-2, .section-3, .section-4, .section-5, .section-6 {
+    padding-top: 65px;
+    padding-bottom: 100px;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -45,6 +60,9 @@ body {
 header {
     height: 65px;
     background: black;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .main-wrapper {
@@ -161,11 +179,6 @@ header .main-wrapper {
     left: 385px;
 }
 
-.section-2, .section-3, .section-4 {
-    padding-top: 65px;
-    padding-bottom: 100px;
-}
-
 .section-2 .main-wrapper > div {
     display: flex;
     align-items: center;
@@ -249,4 +262,87 @@ header .main-wrapper {
 .section-4 .main-wrapper > div > img {
     border: 5px solid green;
     border-radius: 10px;
+}
+
+.section-5 {
+    background: url(src/background-steel.jpg) fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.section-5::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #3a50719e;
+}
+
+.section-5 > .main-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.section-5 .main-wrapper > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.section-5 .main-wrapper > h2 {
+    color: white;
+}
+
+.section-5 .main-wrapper > h2 > span::after {
+    background: white;
+}
+
+.section-5 .main-wrapper > div > p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+.section-5 .main-wrapper > div > img {
+    border: 5px solid rgb(105, 128, 0);
+    border-radius: 10px;
+}
+
+.section-6 .main-wrapper > p {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+footer {
+    padding-top: 24px;
+    height: 100px;
+    background: black;
+}
+
+footer > .main-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer > .main-wrapper > p {
+    color: white;
+    font-size: 20px;
+}
+
+footer > .main-wrapper > a > i {
+    color: white;
+    font-size: 50px;
+    transition-duration: 0.3s;
+}
+
+footer > .main-wrapper > a > i:hover {
+    color: #28e0e0;
 }
